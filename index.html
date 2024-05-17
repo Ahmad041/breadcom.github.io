@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BreadCom</title>
+  <link rel="icon" href="./src/IMG/logo_breadcom.png" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./src/CSS/main.css">
+</head>
+
+<body>
+  <nav class="navbar" style="z-index: 1">
+    <div class="flex justify-start items-center flex-wrap">
+      <div class="flex justify-start items-start">
+        <h3 class="text-orange-500 text-[31.11px] font-bold">Bread</h3>
+        <h3 class="text-yellow-500 text-[31.11px] font-bold">com</h3>
+      </div>
+    </div>
+    <div class="flex justify-start items-center gap-3 flex-wrap">
+      <h4 class="hidden lg:block text-center text-neutral-700 text-lg font-bold">
+        Di antarkan ke
+      </h4>
+      <div class=" flex justify-start items-center">
+        <img src="./src/IMG/Map Marker.svg" alt="Peta Lokasi" class="w-8 h-8 hidden lg:block" />
+        <div class="flex justify-start items-start gap-1">
+          <h3 class="text-center text-neutral-700 text-lg font-normal hidden lg:block">
+            Sekitar
+          </h3>
+          <h2 class="text-center text-neutral-700 text-lg font-bold hidden lg:block">
+            Bekasi
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-start items-center gap-[30px] flex-wrap">
+      <div class="flex justify-center items-center gap-2">
+        <img src="./src/IMG/Search.svg" alt="" srcset="" class="hidden lg:block w-6 h-6" />
+        <input type="text" id="search" class="hidden lg:block text-center text-neutral-700 text-lg font-bold" placeholder="Cari Roti" />
+      </div>
+    </div>
+  </nav>
+  <div class="h-[620px] relative overflow-hidden" style="background-image: url('./src/IMG/Background.png');">
+    <div class="w-full md:w-[604px] h-[505px] absolute left-0 md:left-[1702px] top-[182px]"></div>
+    <div class="flex flex-col justify-start items-start w-full md:w-[856px] absolute left-0 md:left-[220px] top-[132px] gap-8">
+      <div class="flex flex-col justify-center items-start flex-grow-0 flex-shrink-0 relative gap-[15px] rounded-2xl">
+        <p class="flex-grow-0 flex-shrink-0 text-[48px] md:text-[88px] font-bold text-left text-black">
+          Apa kau lapar?
+        </p>
+        <p class="flex-grow-0 flex-shrink-0 text-[14px] md:text-[22px] text-left text-[#504f4f]">
+          dengan beberapa klik sebuah roti yang enak akan datang
+        </p>
+      </div>
+      <div
+        class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative overflow-hidden rounded-2xl"
+        style="
+            filter: drop-shadow(0px 5px 10px rgba(255, 174, 0, 0.26))
+              drop-shadow(0px 20px 40px rgba(255, 174, 0, 0.29));
+          ">
+        <div class="flex justify-start items-start self-stretch flex-grow-0 flex-shrink-0 gap-2 p-3 md:p-6 bg-white">
+          <div
+            class="flex justify-start items-center flex-grow-0 flex-shrink-0 relative gap-1.5 px-3 py-1.5 md:px-6 md:py-2.5 rounded-lg bg-[#f17228]/10">
+            <svg width="24" height="15" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19 5C18.5078 5 17.9805 5.10547 17.5234 5.24609L16.3633 3.3125H19.2812C19.7383 3.3125 20.125 2.96094 20.125 2.46875V1.34375C20.125 0.886719 19.7383 0.5 19.2812 0.5H17.6641C17.418 0.5 17.207 0.605469 17.0312 0.78125L15.7305 2.25781L14.9219 0.921875C14.7812 0.675781 14.5 0.5 14.2188 0.5H11.4062C11.0898 0.5 10.8438 0.78125 10.8438 1.0625V1.625C10.8438 1.94141 11.0898 2.1875 11.4062 2.1875H13.7266L14.3945 3.3125H8.98047C8.38281 2.50391 7.43359 1.90625 5.5 1.90625H3.53125C3.07422 1.90625 2.65234 2.29297 2.6875 2.78516C2.6875 3.24219 3.03906 3.59375 3.53125 3.59375H5.5C6.34375 3.59375 6.83594 3.98047 7.15234 4.47266L6.76562 5.21094C6.30859 5.07031 5.81641 5 5.32422 5.03516C2.93359 5.10547 1.03516 7.03906 1 9.39453C0.929688 11.9609 2.96875 14 5.5 14C7.57422 14 9.33203 12.5938 9.85938 10.625H12.8125C13.2695 10.625 13.6562 10.2383 13.6562 9.74609C13.5859 8.09375 14.2539 6.47656 15.625 5.35156L16.0469 6.08984C15.0977 6.93359 14.4648 8.16406 14.5 9.53516C14.5 11.9961 16.5039 14 18.9297 14C21.4609 14.0352 23.5 11.9961 23.5 9.46484C23.4648 7.03906 21.4609 5.03516 19 5ZM5.5 12.3125C3.91797 12.3125 2.6875 11.082 2.6875 9.5C2.6875 7.95312 3.91797 6.6875 5.5 6.6875C5.64062 6.6875 5.78125 6.72266 5.92188 6.72266L4.48047 9.39453C4.16406 9.95703 4.55078 10.625 5.21875 10.625H8.06641C7.60938 11.6445 6.625 12.3125 5.5 12.3125ZM21.7773 9.67578C21.707 11.082 20.5469 12.2422 19.1406 12.3125C17.5234 12.418 16.1875 11.1172 16.1875 9.5C16.1875 8.76172 16.4688 8.09375 16.9609 7.56641L18.6836 10.4844C18.8594 10.7305 19.1758 10.8359 19.457 10.6602L19.9492 10.3789C20.1953 10.2383 20.3008 9.88672 20.125 9.60547L18.4375 6.75781C18.6133 6.72266 18.7891 6.72266 19 6.72266C20.582 6.6875 21.8828 8.05859 21.7773 9.67578Z" fill="#F17228"/>
+              </svg>              
+            <p class="flex-grow-0 flex-shrink-0 text-base md:text-lg font-bold text-left text-[#f17228]">
+              Delivery
+            </p>
+          </div>
+          <div class="flex justify-start items-start flex-grow-0 flex-shrink-0 relative gap-1.5 px-3 py-1.5 md:px-6 md:py-2.5">
+            <svg width="129" height="38" viewBox="0 0 129 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M36.375 15.875V14.75C36.375 12.2891 34.3359 10.25 31.875 10.25C29.3789 10.25 27.375 12.2891 27.375 14.75V15.875H24V25.4375C24 27.0195 25.2305 28.25 26.8125 28.25H36.9375C38.4844 28.25 39.75 27.0195 39.75 25.4375V15.875H36.375ZM29.625 14.75C29.625 13.5195 30.6094 12.5 31.875 12.5C33.1055 12.5 34.125 13.5195 34.125 14.75V15.875H29.625V14.75ZM35.25 18.9688C34.7578 18.9688 34.4062 18.6172 34.4062 18.125C34.4062 17.668 34.7578 17.2812 35.25 17.2812C35.707 17.2812 36.0938 17.668 36.0938 18.125C36.0938 18.6172 35.707 18.9688 35.25 18.9688ZM28.5 18.9688C28.0078 18.9688 27.6562 18.6172 27.6562 18.125C27.6562 17.668 28.0078 17.2812 28.5 17.2812C28.957 17.2812 29.3438 17.668 29.3438 18.125C29.3438 18.6172 28.957 18.9688 28.5 18.9688Z" fill="#757575"/>
+              <path d="M51.35 25H54.158V21.112H55.544C58.01 21.112 60.152 19.888 60.152 17.08C60.152 14.2 58.046 13.282 55.472 13.282H51.35V25ZM54.158 18.898V15.496H55.31C56.678 15.496 57.416 15.91 57.416 17.08C57.416 18.25 56.768 18.898 55.382 18.898H54.158ZM61.927 25H64.699V16.054H61.927V25ZM63.313 14.794C64.231 14.794 64.879 14.236 64.879 13.354C64.879 12.49 64.231 11.932 63.313 11.932C62.395 11.932 61.747 12.49 61.747 13.354C61.747 14.236 62.395 14.794 63.313 14.794ZM70.9139 25.216C71.8679 25.216 73.0019 24.946 73.8659 24.154L72.7859 22.408C72.3359 22.75 71.8319 22.966 71.2379 22.966C70.1399 22.966 69.3119 22.012 69.3119 20.518C69.3119 19.042 70.0859 18.07 71.3279 18.07C71.7239 18.07 72.0659 18.196 72.4799 18.502L73.7759 16.792C73.1099 16.216 72.2639 15.838 71.1659 15.838C68.6819 15.838 66.4679 17.548 66.4679 20.518C66.4679 23.488 68.3939 25.216 70.9139 25.216ZM75.4094 25H78.1634V22.786L79.1894 21.598L81.1334 25H84.1574L80.8274 19.78L83.9414 16.054H80.8814L78.2174 19.438H78.1634V12.418H75.4094V25ZM87.7422 25.216C88.9482 25.216 89.7942 24.658 90.5322 23.776H90.6042L90.8022 25H93.0702V16.054H90.2802V21.922C89.7942 22.588 89.4162 22.84 88.7862 22.84C88.0662 22.84 87.7422 22.48 87.7422 21.238V16.054H84.9522V21.598C84.9522 23.83 85.7802 25.216 87.7422 25.216ZM95.343 28.276H98.115V25.684L98.025 24.298C98.655 24.892 99.357 25.216 100.131 25.216C102.057 25.216 103.875 23.452 103.875 20.374C103.875 17.62 102.543 15.838 100.383 15.838C99.465 15.838 98.565 16.288 97.881 16.918H97.809L97.611 16.054H95.343V28.276ZM99.465 22.93C99.033 22.93 98.565 22.804 98.115 22.408V18.862C98.601 18.34 99.033 18.106 99.555 18.106C100.545 18.106 101.013 18.844 101.013 20.41C101.013 22.228 100.329 22.93 99.465 22.93Z" fill="#757575"/>
+              </svg>
+              
+          </div>
+        </div>
+        
+        <div
+          class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 gap-2.5 p-6 bg-white">
+          <div class="flex justify-start items-center self-stretch flex-grow-0 flex-shrink-0 gap-4">
+            <div style="padding-right: 30rem"
+              class="flex justify-start items-center flex-grow relative gap-3 pl-4 pt-[7px] pb-2 rounded-lg bg-neutral-100">
+              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.8086 12.3049L11.0742 9.57056C10.9375 9.46118 10.7734 9.37915 10.6094 9.37915H10.1719C10.9102 8.42212 11.375 7.21899 11.375 5.87915C11.375 2.76196 8.80469 0.19165 5.6875 0.19165C2.54297 0.19165 0 2.76196 0 5.87915C0 9.02368 2.54297 11.5667 5.6875 11.5667C7 11.5667 8.20312 11.1292 9.1875 10.3635V10.8284C9.1875 10.9924 9.24219 11.1565 9.37891 11.2932L12.0859 14.0002C12.3594 14.2737 12.7695 14.2737 13.0156 14.0002L13.7812 13.2346C14.0547 12.9885 14.0547 12.5784 13.8086 12.3049ZM5.6875 9.37915C3.74609 9.37915 2.1875 7.82056 2.1875 5.87915C2.1875 3.96509 3.74609 2.37915 5.6875 2.37915C7.60156 2.37915 9.1875 3.96509 9.1875 5.87915C9.1875 7.82056 7.60156 9.37915 5.6875 9.37915Z" fill="white"/>
+                </svg>                
+              <p class="flex-grow-0 flex-shrink-0 text-lg text-left text-[#9e9e9e]">
+                Enter Your Address
+              </p>
+            </div>
+            <div
+              class="flex justify-center items-center flex-grow-0 flex-shrink-0 relative gap-2.5 px-12 py-[21px] rounded-lg"
+              style="
+                  background: linear-gradient(
+                    137.75deg,
+                    #ff7a7a -39.37%,
+                    #f65900 143.15%
+                  );
+                ">
+              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13.8086 12.3049L11.0742 9.57056C10.9375 9.46118 10.7734 9.37915 10.6094 9.37915H10.1719C10.9102 8.42212 11.375 7.21899 11.375 5.87915C11.375 2.76196 8.80469 0.19165 5.6875 0.19165C2.54297 0.19165 0 2.76196 0 5.87915C0 9.02368 2.54297 11.5667 5.6875 11.5667C7 11.5667 8.20312 11.1292 9.1875 10.3635V10.8284C9.1875 10.9924 9.24219 11.1565 9.37891 11.2932L12.0859 14.0002C12.3594 14.2737 12.7695 14.2737 13.0156 14.0002L13.7812 13.2346C14.0547 12.9885 14.0547 12.5784 13.8086 12.3049ZM5.6875 9.37915C3.74609 9.37915 2.1875 7.82056 2.1875 5.87915C2.1875 3.96509 3.74609 2.37915 5.6875 2.37915C7.60156 2.37915 9.1875 3.96509 9.1875 5.87915C9.1875 7.82056 7.60156 9.37915 5.6875 9.37915Z"
+                  fill="white" />
+              </svg>
+
+              <p class="flex-grow-0 flex-shrink-0 text-lg font-bold text-center text-white">
+                Find Food
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mt-10">
+    <div class="mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-4 p-4">
+      <div><div class="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-8">
+  <div
+    class="flex-grow-0 flex-shrink-0 w-[356.91px] h-[301px] relative overflow-hidden rounded-2xl bg-white"
+  >
+    <img src="./src/IMG/roti_coklat.jpg" class="w-[357px] h-[301px] absolute left-[-1px] top-[-1px] object-cover" />
+    
+  </div>
+  <div class="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-3.5">
+    <p class="flex-grow-0 flex-shrink-0 text-[22px] font-bold text-left text-[#424242]">
+      Roti Coklat
+    </p>
+    <div
+      class="flex justify-start items-start flex-grow-0 flex-shrink-0 relative gap-2.5 px-4 py-2 rounded-lg bg-[#f17228]/20"
+    >
+      <p class="flex-grow-0 flex-shrink-0 text-[22px] font-bold text-left text-[#f17228]">
+        6 Days Remaining
+      </p>
+    </div>
+  </div>
+</div></div>
+      <div><div class="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-8">
+  <div
+    class="flex-grow-0 flex-shrink-0 w-[356.91px] h-[301px] relative overflow-hidden rounded-2xl bg-white"
+  >
+    <img src="./src/IMG/Roti2.jpg" class="w-[357px] h-[301px] absolute left-[-1px] top-[-1px] object-cover" />
+  </div>
+  <div class="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-3.5">
+    <p class="flex-grow-0 flex-shrink-0 text-[22px] font-bold text-left text-[#424242]">
+      Roti Strawberry
+    </p>
+    <div
+      class="flex justify-start items-start flex-grow-0 flex-shrink-0 relative gap-2.5 px-4 py-2 rounded-lg bg-[#f17228]/20"
+    >
+      <p class="flex-grow-0 flex-shrink-0 text-[22px] font-bold text-left text-[#f17228]">
+        6 Days Remaining
+      </p>
+    </div>
+  </div>
+</div></div>
+      <div><div class="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-8">
+  <div
+    class="flex-grow-0 flex-shrink-0 w-[356.91px] h-[301px] relative overflow-hidden rounded-2xl bg-white"
+  >
+    <img src="./src/IMG/Roti3.jpg" class="w-[357px] h-[301px] absolute left-[-1px] top-[-1px] object-cover" />
+  </div>
+  <div class="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-3.5">
+    <p class="flex-grow-0 flex-shrink-0 text-[22px] font-bold text-left text-[#424242]">
+      Roti Pisang Coklat
+    </p>
+    <div
+      class="flex justify-start items-start flex-grow-0 flex-shrink-0 relative gap-2.5 px-4 py-2 rounded-lg bg-[#f17228]/20"
+    >
+      <p class="flex-grow-0 flex-shrink-0 text-[22px] font-bold text-left text-[#f17228]">
+        6 Days Remaining
+      </p>
+    </div>
+  </div>
+</div></div>
+      <div><div class="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-8">
+  <div
+    class="flex-grow-0 flex-shrink-0 w-[356.91px] h-[301px] relative overflow-hidden rounded-2xl bg-white"
+  >
+    <img src="./src/IMG/Roti4.jpg" class="w-[357px] h-[301px] absolute left-[-1px] top-[-1px] object-cover" />
+
+  </div>
+  <div class="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-3.5">
+    <p class="flex-grow-0 flex-shrink-0 text-[22px] font-bold text-left text-[#424242]">
+      Roti Keju
+    </p>
+    <div
+      class="flex justify-start items-start flex-grow-0 flex-shrink-0 relative gap-2.5 px-4 py-2 rounded-lg bg-[#f17228]/20"
+    >
+      <p class="flex-grow-0 flex-shrink-0 text-[22px] font-bold text-left text-[#f17228]">
+        6 Days Remaining
+      </p>
+    </div>
+  </div>
+</div></div>
+  </div>
+  </div>
+  <div class="mt-10">
+    <div
+  class="flex-grow-0 flex-shrink-0 w-[1520px] h-[1230px] relative overflow-hidden rounded-[5px] border border-[#7b61ff] border-dashed"
+>
+  <div
+    class="flex justify-start items-start w-full md:w-[1480px] absolute left-0 md:left-5 top-0 md:top-5 overflow-hidden rounded-2xl"
+    style="filter: drop-shadow(0px 14px 15px rgba(124,124,124,0.06)) drop-shadow(0px 27px 82px rgba(124,124,124,0.28));"
+  >
+    <div
+      class="flex flex-col justify-start items-start self-stretch flex-grow gap-12 p-14 bg-white"
+    >
+      <div
+        class="flex flex-col justify-center items-start self-stretch flex-grow relative gap-[19px]"
+      >
+        <p class="flex-grow-0 flex-shrink-0 w-full md:w-[407px] text-[43px] font-bold text-left">
+          <span
+            class="flex-grow-0 flex-shrink-0 w-full md:w-[407px] text-[43px] font-bold text-left text-[#353535]"
+            >Photo card Reno </span
+          ><span
+            class="flex-grow-0 flex-shrink-0 w-full md:w-[407px] text-[43px] font-bold text-left text-[#ffb30e]"
+            >Photo ceo tampan</span
+          >
+        </p>
+        <p
+          class="self-stretch flex-grow-0 flex-shrink-0 w-full md:w-[407px] text-lg font-semibold text-left text-[#616161]/[0.69]"
+        >
+          <span
+            class="self-stretch flex-grow-0 flex-shrink-0 w-full md:w-[407px] text-lg font-semibold text-left text-[#616161]/[0.69]"
+            >beli roti untuk mendapatkan Photo si tampan  </span
+          ><br /><span
+            class="self-stretch flex-grow-0 flex-shrink-0 w-full md:w-[407px] text-lg font-semibold text-left text-[#616161]/[0.69]"
+            >Get the handshome guy.</span
+          >
+        </p>
+      </div>
+      <div
+        class="flex justify-center items-center self-stretch flex-grow-0 flex-shrink-0 relative gap-2.5 px-12 py-[21px] rounded-lg"
+        style="background: linear-gradient(149.95deg, #ffb800 -95.15%, #ff8a00 166.18%); box-shadow: 0px 5px 8px 0 rgba(222,151,0,0.24), 0px 14px 32px 0 rgba(255,178,14,0.29);"
+      >
+        <p class="flex-grow-0 flex-shrink-0 text-lg font-black text-center uppercase text-white">
+          Pesan sekarang
+        </p>
+      </div>
+    </div>
+    <div
+      class="flex-grow-0 flex-shrink-0 w-full md:w-[961px] h-[512px] relative overflow-hidden bg-[url(&#x27;right.jpeg&#x27;)] bg-cover bg-no-repeat bg-center"
+    >
+      <img
+        src="./src/IMG/reno.jpg"
+        class="w-full h-full object-cover"
+      />
+    </div>
+  </div>
+  <div
+    class="flex justify-start items-start w-[1480px] absolute left-5 top-[698px] overflow-hidden rounded-2xl"
+    style="filter: drop-shadow(0px 14px 15px rgba(124,124,124,0.06)) drop-shadow(0px 27px 82px rgba(124,124,124,0.28));"
+  >
+    <div
+      class="flex-grow-0 flex-shrink-0 w-[961px] h-[512px] relative overflow-hidden bg-[url(&#x27;right.jpeg&#x27;)] bg-cover bg-no-repeat bg-center"
+    >
+      <img
+        src="./src/IMG/dapek.jpg"
+        class="w-[961px] h-[512px] absolute left-[-1px] top-[-1px] object-cover"
+      />
+    </div>
+    <div
+      class="flex flex-col justify-start items-start self-stretch flex-grow gap-12 p-14 bg-white"
+    >
+      <div
+        class="flex flex-col justify-center items-start self-stretch flex-grow relative gap-[19px]"
+      >
+        <p class="flex-grow-0 flex-shrink-0 w-[407px] text-[43px] font-bold text-left">
+          <span
+            class="flex-grow-0 flex-shrink-0 w-[407px] text-[43px] font-bold text-left text-[#353535]"
+            >Paket Keluarga </span
+          ><span
+            class="flex-grow-0 flex-shrink-0 w-[407px] text-[43px] font-bold text-left text-[#ffb30e]"
+            >3 coklat dan 2 Strawberry</span
+          >
+        </p>
+        <p
+          class="self-stretch flex-grow-0 flex-shrink-0 w-[407px] text-lg text-left text-[#757575]"
+        >
+          <span
+            class="self-stretch flex-grow-0 flex-shrink-0 w-[407px] text-lg text-left text-[#757575]"
+            >Nikmati bersama keluarga </span
+          ><br /><span
+            class="self-stretch flex-grow-0 flex-shrink-0 w-[407px] text-lg text-left text-[#757575]"
+            >Ehe</span
+          >
+        </p>
+      </div>
+      <div
+        class="flex justify-center items-center self-stretch flex-grow-0 flex-shrink-0 relative gap-2.5 px-12 py-[21px] rounded-lg"
+        style="background: linear-gradient(149.95deg, #ffb800 -95.15%, #ff8a00 166.18%); box-shadow: 0px 5px 8px 0 rgba(222,151,0,0.24), 0px 14px 32px 0 rgba(255,178,14,0.29);"
+      >
+        <p class="flex-grow-0 flex-shrink-0 text-lg font-bold text-center text-white">
+          Pesan Sekarang
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+</body>
+
+</html>
